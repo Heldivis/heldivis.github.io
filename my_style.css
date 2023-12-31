@@ -1,3 +1,10 @@
+/* Only English Italic */
+@font-face {
+	font-family: Italic_Chinese;
+	font-style: italic;
+	src: local("楷体");
+}
+
 /* For All */
 body {
 	font-size: 24px;
@@ -15,6 +22,7 @@ body {
 	}
 }
 h1 {
+	font-size: 2em;
     font-weight: normal;
 	font-family: "Calibri", "黑体";
 }
@@ -50,16 +58,16 @@ a:link {
 }
 @media (prefers-color-scheme: dark) {
 	a:link {
-		color:white;
+		color: #ddffff;
 		text-decoration:none;
 	} a:visited {
-		color:white;
+		color: #ddffff;
 		text-decoration:none;
 	} a:hover {
-		color:white;
+		color: #aaffff;
 		text-decoration:none;
 	} a:active {
-		color:white;
+		color: #ddffff;
 		text-decoration:none;
 	}
 }
@@ -93,6 +101,9 @@ a:link {
 		background-color:black
 	}
 }
+.HeadInHead {
+	font-family: "Times New Roman", "宋体";
+}
 
 /* Footer */
 .Footer {
@@ -110,12 +121,7 @@ a:link {
 	}
 }
 
-/* Only English Italic */
-@font-face {
-	font-family: Italic_Chinese;
-	font-style: italic;
-	src: local("楷体");
-}
+
 
 /* Classes */
 .Cite {
