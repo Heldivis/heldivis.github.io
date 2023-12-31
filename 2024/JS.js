@@ -15,12 +15,17 @@ setInterval(function() {document.querySelector('.GetTime').innerHTML = getTime()
 
 function getTimeR() {
     var date = new Date();
+    var year = date.getFullYear();
+    if (year == 2024)
+        return "新年快乐！";
     var hour = date.getHours(); //获取小时
     var minute = date.getMinutes(); // 获取分
     var second = date.getSeconds(); //获取秒
-    hour = 24 - hour;
+    hour = 23 - hour;
     minute = 59 - minute;
     second = 60 - second;
+    minute = minute < 10 ? '0' + minute : minute;
+    second = second < 10 ? '0' + second : second;
     return hour + ':' + minute + ':' + second;
 }
 setInterval(function() {document.querySelector('.GetTimeR').innerHTML = getTimeR();}, 1)
