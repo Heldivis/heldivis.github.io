@@ -22,10 +22,10 @@ function getTimeR() {
     var second = date.getSeconds(); //获取秒
     if (month == 2)
         day = day + 31;
-    var finalday = 41;
+    var finalday = 1;
     day = finalday - 1 - day;
     if (day < 0)
-        return "<span style = 'font-weight: bolder;'>新年快乐！</span>";
+        return "<span style = 'font-weight: bolder; font-size = 1.2em;'>新年快乐！</span>";
     hour = 23 - hour;
     minute = 59 - minute;
     second = 60 - second;
