@@ -1,0 +1,35 @@
+.main {
+    font-size: 2em;
+    font-family: 'Fira Code', '黑体';
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    color: white;
+    background: #363B40;
+}
+
+.look {
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: 'Times New Roman', '楷体';
+}
