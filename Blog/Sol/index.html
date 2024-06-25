@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html lang="zh-cn">
 
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width initial-scale=1'>
-  <title>Heldivis Blog</title>
+  <title>Blog</title>
   <style type='text/css'>
     html {
       overflow-x: initial !important;
@@ -47,14 +47,14 @@
       margin: auto;
     }
 
-    a.url {
+    /* a.url {
       word-break: break-all;
     }
 
     a:active,
     a:hover {
       outline: 0px;
-    }
+    } */
 
     .in-text-selection,
     ::selection {
@@ -2769,20 +2769,24 @@
       stroke-width: 0;
     }
   </style>
-</head>
 
+</head>
 <style>
   a {
+    color: #999999;
     text-decoration: none;
-    color: white;
+    outline: none;
+    font-family: monospace;
+    font-size: 1.15rem;
   }
 
-  li {
-    color: #cccccc;
+  a:hover {
+    color: white;
+    outline: none;
   }
 
   h1 {
-    font-family: 'Ink Free', '仿宋';
+    font-family: 'Ink Free', '楷体';
     font-weight: bolder;
     color: white;
     letter-spacing: 2px;
@@ -2790,39 +2794,43 @@
   }
 
   h2 {
-    font-family: 'Comic Sans MS', '楷体';
+    font-family: 'Comic Sans MS';
     font-weight: normal;
     color: white;
     letter-spacing: 1px;
     word-spacing: 2px;
   }
 
-  ul {
-    font-family: 'Comic Shanns';
-    font-size: 1.15rem;
+  .lr {
+    float: left;
+    width: auto;
+  }
 
+  .unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 </style>
 
-<body class='typora-export os-windows'>
+<body class='typora-export os-windows unselectable'>
   <div class='typora-export-content'>
-    <div id='write' class=''>
-      <h1 id='atcoder-beginner-contest-346'>
-
-        <!-- Code Here -->
-        <br>
-        <h1>Oops!　这个网页走丢了</span></h1>
-        <hr />
-        <ul>
-          <li style="height: 2em;">Heldivis 太懒了，还没有写……</li>
-          <li style="height: 2em;">可以试试【<a href="https://heldivis.github.io">回到主页</a>】？</li>
-          <li style="height: 2em;">或者试试【<a href="javascript:;" onclick="javascript:history.back();">返回上一页</a>】？</li>
-          </li>
-        </ul>
-        <!-- Code Here -->
-
+    <div id='write'>
+      <h1><span>题解 | Solutions</span></h1>
+      <hr />
+      <a href='./AT_abc352_d' target="_blank"><span>Atocder Beginner Contest 352 Task D</span></a><br />
+      <a href='./AT_abc352_e' target="_blank"><span>Atocder Beginner Contest 352 Task E</span></a><br />
+      <a href='./AT_abc352_f' target="_blank"><span>Atocder Beginner Contest 352 Task F</span></a><br />
+      <a href='./AT_abc354_d' target="_blank"><span>Atocder Beginner Contest 354 Task D</span></a><br />
+      <a href='./AT_arc178_a' target="_blank"><span>Atocder Regular&ensp; Contest 178 Task D</span></a><br />
+      <a href='./AT_abc357_f' target="_blank"><span>Atocder Beginner Contest 357 Task F</span></a><br />
+      <a href='./AT_abc358_f' target="_blank"><span>Atocder Beginner Contest 358 Task F</span></a><br />
+      <a href='./AT_abc358_f' target="_blank"><span>Atocder Beginner Contest 359 Task F</span></a><br />
+      <a href='./AT_abc358_g' target="_blank"><span>Atocder Beginner Contest 359 Task G</span></a><br />
+      <p style="float: right; font-family: 'Times New Roman', Times, serif; font-style: italic;">9 Passages In Total.
+      </p>
     </div>
-  </div>
 </body>
 
 </html>

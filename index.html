@@ -4,7 +4,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width initial-scale=1'>
-  <title>Blog</title>
+  <title>Heldivis</title>
   <style type='text/css'>
     html {
       overflow-x: initial !important;
@@ -490,6 +490,7 @@
 
       .typora-export * {
         -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .typora-export #write {
@@ -867,7 +868,7 @@
       }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
       .typora-export-sidebar {
         display: none;
       }
@@ -1642,7 +1643,7 @@
 
     @media only screen and (min-width: 1800px) {
       #write {
-        max-width: 1200px;
+        max-width: 900px;
       }
     }
 
@@ -2518,6 +2519,7 @@
       margin-left: -1.3em;
       margin-top: 0.3rem;
       -webkit-appearance: none;
+      appearance: none;
     }
 
     .md-mathjax-midline {
@@ -2769,110 +2771,44 @@
       stroke-width: 0;
     }
   </style>
-
 </head>
+
 <style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p {
+    color: white;
+    font-weight: normal;
+    font-family: 'Times New Roman', '宋体';
+  }
+
   a {
-    color: #999999;
     text-decoration: none;
-    outline: none;
-    font-family: monospace;
-    font-size: 1.15rem;
   }
 
   a:hover {
-    color: white;
-    outline: none;
+    color: #a3d5fe;
   }
 
   h1 {
-    font-family: 'Ink Free';
     font-weight: bolder;
-    color: white;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-  }
-
-  h2 {
-    font-family: 'Comic Sans MS', '楷体';
-    font-weight: normal;
-    color: white;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-  }
-
-  .lr {
-    float: left;
-  }
-
-  .unselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .a_read_more {
-    font-style: italic;
-    color: #bb7722;
-  }
-
-
-  .lst {
-    color: #99b099;
   }
 </style>
 
 <body class='typora-export os-windows unselectable'>
-  <div class='typora-export-content'>
-    <div id='write'>
-
-      <!-- Code Here -->
-      <h1 id='heldivis-blog'><span>Heldivis Blog</span> </h1>
-      <hr />
-      <br />
-
-      <div>
-        <h2 id='atcoder'>
-          <span>比赛记录 | AtCoder</span>
-          <a href="https://atcoder.jp/users/Heldivis">
-            <img src="https://atrating.baoshuo.dev/rating?username=heldivis" alt="Heldivis At AtCoder" />
-          </a>
-        </h2>
-        <a class="lst" href='./AtCoder/ABC358' target="_blank"><span>AtCoder Beginner Contest 358</span></a><br />
-        <a href='./AtCoder/ABC357' target="_blank"><span>AtCoder Beginner Contest 357</span></a><br />
-        <a href='./AtCoder/ABC356' target="_blank"><span>AtCoder Beginner Contest 356</span></a><br />
-        <span class="read_more"><a href='./AtCoder' target="_blank" class="a_read_more"><span>Read
-              More ...</span></a>&emsp;&emsp;&emsp;<br /></span>
-      </div>
-      <br />
-      <div>
-        <h2>题解 | Solutions</h2>
-        <a class="lst" href='./Sol/AT_abc359_f' target="_blank"><span>AtCoder Beginner Contest 359 F</span></a><br />
-        <a href='./Sol/AT_abc359_g' target="_blank"><span>AtCoder Beginner Contest 359 G</span></a><br />
-        <a href='./Sol/AT_arc178_a' target="_blank"><span>AtCoder Regular &ensp;Contest 178 A</span></a><br />
-        <span class="read_more"><a href='./Sol' target="_blank" class="a_read_more"><span>Read
-              More ...</span></a>&emsp;&emsp;&emsp;<br /></span>
-      </div>
-      <br />
-      <div>
-        <h2>游记 | Travel</h2>
-        <a class="lst" href='./Travel/ICPC2024' target="_blank"><span>Henan International Collegiate Programming Contest
-            2024</span></a><br />
-        <a href='./Travel/NOIP2024' target="_blank"><span>National Olympiad in Informatics in Provinces
-            2024</span></a><br />
-        <a href='./Travel/CSP2024S2' target="_blank"><span>Certified Software Professional
-            Senior 2024 Round
-            2</span></a><br />
-        <span class="read_more"><a href='./Travel' target="_blank" class="a_read_more"><span>Read
-              More ...</span></a>&emsp;&emsp;&emsp;<br /></span>
-      </div>
-      <br />
-      <br />
-      <p style="float: right; font-family: 'Times New Roman', Times, serif; font-style: italic;">30 Passages In Total.
-      </p>
-
-    </div>
+  <div id='write'>
+    <h1><a href="">Heldivis.Github.io</a></h1>
+    <h2>
+      <a href="./Blog/">
+        <span style="color: #a3d5fe;">&#x27A6</span>Heldivis Blog
+      </a>
+    </h2>
+  </div>
 </body>
 
 </html>
