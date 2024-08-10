@@ -19,9 +19,9 @@
 
   .link {
     background-color: #5A4D42;
-    width: 20em;
-    height: 15em;
-    line-height: 3.75em;
+    width: 15em;
+    height: 12em;
+    line-height: 3em;
     text-align: center;
     margin-left: 1em;
     margin-right: 1em;
@@ -30,37 +30,35 @@
   }
 
   .note {
-    width: 50em;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     margin-left: 1em;
     margin-right: 1em;
-    float: left;
-    padding: 7.5em 0;
+    vertical-align: middle;
+    display: table-cell;
   }
 </style>
 
-<body style="font-family: 'Times New Roman', Times, '宋体'; background-color: #363B40; color: white; font-size: 1.2em;">
-  <div id='header' style="
-    top: 0; bottom: 0; left: 0; right: 0; margin: auto;
-    background-color: black; color:white; height: 30%;
-    font-size: 7em; font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    letter-spacing: 0.6em;">
-    <br />
-    HELDIVIS
-    <br />
-    <br />
+<body style="font-family: 'Times New Roman', Times, '宋体'; background-color: #363B40; color: white; font-size: 0.5em;">
+
+  <div id='header' style="background-color: black; text-align: center;">
+    <span style="letter-spacing: 0.6em; font-size: 10em;">
+      <br />
+      HELDIVIS
+      <br />
+      <br />
+    </span>
   </div>
   <br />
-  <div style="
-    top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 75em">
+  <div
+    style="top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 80%; margin-left: 10%; margin-right: 10%; font-size: 2em;">
     <p>
       这里是 <a href="https://github.com/Heldivis">@Heldivis</a> 的网站 <a
         href=" https://heldivis.github.io">https://heldivis.github.io</a>。
     </p>
+    <hr />
     <br />
-    <hr /> <br />
-    <div>
+    <div style="display: table;">
       <a href="./Web">
         <div class="link">
           <br /><span style="font-size: 3em">常用网站</span><br /><span style="font-size: 3em">./Web</span><br />
@@ -70,25 +68,29 @@
         常用的一些网站，包含若干 Online Jugde、数学 & 信息学辅助工具、Github 和 Outlook 等等。
       </div>
     </div>
-    <div>
-      <div class="note">
-        Heldivis 的博客，主要内容为 Heldivis 的学习记录、生活感悟等等。详情见 <a href="./Blog/About">./Blog/About</a>。
-      </div>
+    <br />
+    <div style="display: table;">
       <a href="./Blog">
         <div class="link">
           <br /><span style="font-size: 3em">博客</span><br /><span style="font-size: 3em">./Blog</span><br />
         </div>
       </a>
+      <div class="note">
+        Heldivis 的博客，主要内容为 Heldivis 的学习记录、生活感悟等等。详情见 <a href="./Blog/About">./Blog/About</a>。
+      </div>
     </div>
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <br />
     <hr /> <br />
-    <p>
-      本站使用 <a href="https://github.com">Github</a> 作为网站托管，网站内容主要使用 <a href="https://code.visualstudio.com">Visual Studio
-        Code</a>、<a href="https://typoraio.cn">Typora</a> 编辑，内容完全为 <a href="https://github.com/Heldivis">@Heldivis</a>
-      原创。
-    </p>
+    <ul>
+      <li>本站使用 <a href="https://github.com">Github</a> 作为网站托管，计划部分页面将使用 <a href="https://wordpress.com/">WordPress</a>
+        辅助。</li>
+      <li>网站内容主要使用 <a href="https://code.visualstudio.com">Visual Studio
+          Code</a>、<a href="https://typoraio.cn">Typora</a> 编辑。</li>
+      <li>内容完全为 <a href="https://github.com/Heldivis">@Heldivis</a>
+        原创。</li>
+    </ul>
   </div>
+  <br /> <br /> <br />
 </body>
 
 </html>
