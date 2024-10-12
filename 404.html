@@ -1,21 +1,22 @@
 <!doctype html>
 <html>
 
-<style>
-  a {
-    text-decoration: none;
-    color: white;
-  }
+<head>
+  <title>404 - Page Not Found</title>
+</head>
 
+<style>
   h1 {
-    font-family: 'Segoe Print', '仿宋';
+    font-family: 'Comic Sans MS', "楷体";
     font-weight: bolder;
     letter-spacing: 2px;
     word-spacing: 4px;
+    text-align: center;
   }
 
-  ul {
-    font-size: 0.9em;
+  p {
+    text-align: center;
+    font-size: 0.7em;
   }
 </style>
 
@@ -25,16 +26,20 @@
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <h1>Oops!　这个网页走丢了</span></h1>
+  <h1>404　这个网页走丢了</span></h1>
   <hr />
-  <ul>
-    <li style="height: 2em;">Heldivis 太懒了，还没有写……</li>
-    <li style="height: 2em;">可以试试【<a href="https://heldivis.github.io">回到主页</a>】？</li>
-    <li style="height: 2em;">或者试试【<a href="javascript:;" onclick="javascript:history.back();">返回上一页</a>】？</li>
-    </li>
-  </ul>
+  <br>
+  <p>三秒后跳转至首页</p>
 </body>
 
 </html>
+<script type="text/javascript">
+  function sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  async function run() {
+    await sleep(3000);
+    window.location.href = ".";
+  }
+  run(); 
+</script>
