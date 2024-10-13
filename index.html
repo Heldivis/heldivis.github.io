@@ -165,7 +165,7 @@
 
     #write h1,
     #write h2,
-    #write h3,
+    #write h2,
     #write h4,
     #write h5,
     #write h6,
@@ -176,7 +176,7 @@
 
     #write h1,
     #write h2,
-    #write h3,
+    #write h2,
     #write h4,
     #write h5,
     #write h6,
@@ -190,7 +190,7 @@
 
     h1,
     h2,
-    h3,
+    h2,
     h4,
     h5,
     h6 {
@@ -211,7 +211,7 @@
       font-size: 1.8rem;
     }
 
-    h3 {
+    h2 {
       font-size: 1.6rem;
     }
 
@@ -231,7 +231,7 @@
     .md-rawblock,
     h1,
     h2,
-    h3,
+    h2,
     h4,
     h5,
     h6,
@@ -634,7 +634,7 @@
       margin-left: 2em;
     }
 
-    .md-toc-h3 .md-toc-inner {
+    .md-toc-h2 .md-toc-inner {
       margin-left: 4em;
     }
 
@@ -651,7 +651,7 @@
     }
 
     @media screen and (max-width: 48em) {
-      .md-toc-h3 .md-toc-inner {
+      .md-toc-h2 .md-toc-inner {
         margin-left: 3.5em;
       }
 
@@ -796,7 +796,7 @@
 
       .typora-export h1,
       .typora-export h2,
-      .typora-export h3,
+      .typora-export h2,
       .typora-export h4,
       .typora-export h5,
       .typora-export h6 {
@@ -928,7 +928,7 @@
       padding-left: 1em;
     }
 
-    .outline-h3>.outline-item {
+    .outline-h2>.outline-item {
       padding-left: 2em;
     }
 
@@ -1289,7 +1289,7 @@
 
     h1,
     h2,
-    h3,
+    h2,
     h4,
     h5,
     h6 {
@@ -1380,7 +1380,7 @@
       border-radius: 3px;
     }
 
-    h3 {
+    h2 {
       color: #6CF;
       padding-left: 0.5em;
       font-size: 1.5rem;
@@ -1418,7 +1418,7 @@
 
     @media (min-width: 980px) {
 
-      h3.md-focus:before,
+      h2.md-focus:before,
       h4.md-focus:before,
       h5.md-focus:before,
       h6.md-focus:before {
@@ -1437,8 +1437,8 @@
         line-height: normal;
       }
 
-      h3.md-focus:before {
-        content: 'h3';
+      h2.md-focus:before {
+        content: 'h2';
       }
 
       h4.md-focus:before {
@@ -1775,7 +1775,7 @@
       color: #DDD;
     }
 
-    #write>h3:before,
+    #write>h2:before,
     #write>h4:before,
     #write>h5:before,
     #write>h6:before {
@@ -1787,7 +1787,7 @@
       top: 0.2rem;
     }
 
-    #write>h3.md-focus:before {
+    #write>h2.md-focus:before {
       top: 2px;
     }
 
@@ -1850,7 +1850,7 @@
 
     /* h1.md-focus .md-attr,
 h2.md-focus .md-attr,
-h3.md-focus .md-attr,
+h2.md-focus .md-attr,
 h4.md-focus .md-attr,
 h5.md-focus .md-attr,
 h6.md-focus .md-attr,
@@ -2267,6 +2267,12 @@ h6.md-focus .md-attr,
       color: #8BF;
       text-decoration: none;
     }
+
+    .mini {
+      font-size: 1.45em;
+      color: #8BF;
+      font-family: '', '楷体';
+    }
   </style>
 </head>
 
@@ -2284,10 +2290,10 @@ h6.md-focus .md-attr,
       <h2 id='博客blog'><a href='./Blog'><span>博客</span></a></h2>
       <p>一些我的博客，包含了一些数学、信息学、算法等等的文章。</p>
       <hr />
-      <h3 id='常用网站web'><a href='./oj'><span>题库</span></a></h3>
-      <h3 id='博客blog'><a href='./chat'><span>聊天</span></a></h3>
-      <h3 id='博客blog'><a href='./gpt'><span>GPT</span></a></h3>
-      <hr />
+      <span><a class="mini" href='./oj'>题库</a>&emsp;</span>
+      <span><a class="mini" href='./chat'>聊天</a>&emsp;</span>
+      <span><a class="mini" href='./gpt'>Chat-GPT</a>&emsp;</span>
+      <span><a class="mini" href='./find'>原题机</a>&emsp;</span>
     </div>
   </div>
 </body>
