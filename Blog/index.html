@@ -2258,19 +2258,19 @@ h6.md-focus .md-attr,
   </style>
 </head>
 
-<body class='typora-export os-windows' >
+<body class='typora-export os-windows'>
   <div class='typora-export-content'>
     <div id='write'>
       <h1 id='heldivis-blog'><span>Heldivis Blog</span></h1>
-      <p id="RandomResult" style="font-size: 0.85em; line-height: 3em; left: 2em; font-family: '行楷','楷体';" class="ci"/>
+      <p id="RandomResult" style="font-size: 0.85em; line-height: 3em; left: 2em; font-family: '行楷','楷体';" class="ci" />
       <h2 id='比赛记录--contest'><a href='./Contest'><span>比赛记录 | Contest</span></a></h2>
-      <p style="line-height: 0.4em;"/>
+      <p style="line-height: 0.4em;" />
       <h2 id='题解--solutions'><a href='./Sol'><span> 题 解  | Solutions</span></a></h2>
-      <p style="line-height: 0.4em;"/>
+      <p style="line-height: 0.4em;" />
       <h2 id='游记--travel'><a href='./Travel'><span> 游 记  | Travel</span></a></h2>
-      <p style="line-height: 0.4em;"/>
+      <p style="line-height: 0.4em;" />
       <h2 id='友链--friends'><a href='./Friends'><span> 友 链  | Friends</span></a></h2>
-      <p style="line-height: 0.4em;"/>
+      <p style="line-height: 0.4em;" />
       <h2 id='关于我--about-me'><a href='./About'><span>关 于 我 | About Me</span></a></h2>
     </div>
   </div>
@@ -2282,7 +2282,7 @@ h6.md-focus .md-attr,
 <style>
   body {
     font-size: 1.5em;
-    background: url("./laru.jpg");
+    /* background: url("./xxx.jpg"); */
     height: 1080px;
   }
 
@@ -2322,6 +2322,7 @@ h6.md-focus .md-attr,
     -ms-user-select: none;
     user-select: none;
   }
+
   h2 {
     position: relative;
     padding-left: 0.7em;
@@ -2341,12 +2342,14 @@ h6.md-focus .md-attr,
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
+
   .ci {
     position: relative;
     padding-left: 0.7em;
     margin: 24px 0;
     background-color: rgba(40, 40, 128, 0.25);
   }
+
   .ci::before {
     content: "";
     background-color: #338;
@@ -2366,13 +2369,8 @@ h6.md-focus .md-attr,
 <script type=text/javascript>
 tips = new Array;
   tips[0] = '我愿回溯选择，选择与象牙塔的幻影相错，承受注定的偏颇，也不愿在拥抱过浓墨重彩的热烈后，被迫离开。'; 
-  tips[1] = '假寐间，窥见的浮游光斑是轮回中的虚无。'; 
-  tips[2] = '让我平凡如尘，望着怅然如同夕阳落下。'; 
-  tips[3] = '在每一次彼岸花开时，静默下一个轮回。'; 
-  tips[4] = '鱼跃此时海，花开彼岸天。'; 
-  tips[5] = '那是尘埃吧，是虚无纷飞，终将落地的谎言。'; 
-  tips[6] = '能否在轮回中找到那把遗失的刻刀，再次铭记不分的誓言。'; 
-  tips[7] = '如果我能单纯爱上一片树叶，那么我能否再次爱上这个世界。'; 
+  tips[1] = '如果我能单纯爱上一片树叶，那么我能否再次爱上这个世界。'; 
+  tips[2] = '为什么不一起做玻璃水母呢？又柔软，又坚硬，能够打碎那些无法理解、无法接受、无法原谅的人和事，又能把无法改变的改变。'; 
   index = Date.now() % tips.length;
   res = tips[index];
   document.getElementById('RandomResult').innerHTML = res;
