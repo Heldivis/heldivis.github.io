@@ -29,7 +29,7 @@
   <h1>404　这个网页走丢了</span></h1>
   <hr />
   <br>
-  <p>三秒后跳转至首页</p>
+  <p>三秒后返回上一页</p>
 </body>
 
 </html>
@@ -39,7 +39,8 @@
   }
   async function run() {
     await sleep(3000);
-    window.location.href = "https://heldivis.github.io";
+    // window.location.href = ".";
+    window.history.go(-1);
   }
   run(); 
 </script>
