@@ -2259,15 +2259,18 @@ h6.md-focus .md-attr,
 </head>
 
 <body class='typora-export os-windows'>
-  <div class='typora-export-content'>
+  <div class='typora-export-content' style="z-index: 999;">
     <div id='write'>
       <h1 id='heldivis-blog'><span>Heldivis Blog</span></h1>
-      <p id="RandomResult" style="font-size: 0.85em; line-height: 3em; left: 2em; font-family: '行楷','楷体';" class="ci" />
+      <br>
+      <!-- <p id="RandomResult" style="font-size: 0.85em; line-height: 3em; left: 2em; font-family: '行楷','楷体';" class="ci" /> -->
       <h2 id='比赛记录--contest'><a href='./Contest'><span>比赛记录 | Contest</span></a></h2>
       <p style="line-height: 0.4em;" />
       <h2 id='题解--solutions'><a href='./Sol'><span> 题 解  | Solutions</span></a></h2>
       <p style="line-height: 0.4em;" />
       <h2 id='游记--travel'><a href='./Travel'><span> 游 记  | Travel</span></a></h2>
+      <p style="line-height: 0.4em;" />
+      <h2 id='游记--travel'><a href='./Article'><span> 文 章  | Article</span></a></h2>
       <p style="line-height: 0.4em;" />
       <h2 id='友链--friends'><a href='./Friends'><span> 友 链  | Friends</span></a></h2>
       <p style="line-height: 0.4em;" />
@@ -2282,7 +2285,6 @@ h6.md-focus .md-attr,
 <style>
   body {
     font-size: 1.5em;
-    /* background: url("./xxx.jpg"); */
     height: 1080px;
   }
 
@@ -2309,6 +2311,7 @@ h6.md-focus .md-attr,
     font-weight: normal;
     color: white;
     letter-spacing: 1px;
+    text-align: left;
     word-spacing: 2px;
   }
 
@@ -2368,9 +2371,7 @@ h6.md-focus .md-attr,
 
 <script type=text/javascript>
 tips = new Array;
-  tips[0] = '我愿回溯选择，选择与象牙塔的幻影相错，承受注定的偏颇，也不愿在拥抱过浓墨重彩的热烈后，被迫离开。'; 
-  tips[1] = '如果我能单纯爱上一片树叶，那么我能否再次爱上这个世界。'; 
-  tips[2] = '为什么不一起做玻璃水母呢？又柔软，又坚硬，能够打碎那些无法理解、无法接受、无法原谅的人和事，又能把无法改变的改变。'; 
+  tips[0] = ''; 
   index = Date.now() % tips.length;
   res = tips[index];
   document.getElementById('RandomResult').innerHTML = res;
