@@ -1495,7 +1495,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Constantia', 'Times New Roman', '方正小标宋简体', '宋体', sans-serif;
+    font-family: 'Palatino Linotype', 'Times New Roman', '方正小标宋简体', '宋体', sans-serif;
     font-weight: normal;
     clear: both;
     -ms-word-wrap: break-word;
@@ -2630,46 +2630,72 @@ mjx-container[jax="SVG"] use[data-c] {
     stroke-width: 0;
 }
 
+b,
+strong {
+    color: #FFFFC0;
+}
+
+i,
+em {
+    font-family: 'Comic Sans MS', 'Ink Free';
+}
+
+.sha {
+    background-color: #262B30;
+    color: #262B30;
+}
+
+.sha:hover {
+    color: white;
+}
+
 
 </style>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><style> a { font-size: 1.1em; } </style><h1 id='题解--solution'><span>题解 | Solution</span></h1><hr /><h2 id='atcoder'><span>AtCoder</span></h2><p><span>[</span><a href='https://www.luogu.com.cn/article/p99qe98p'><span>ABC352D</span><span>]</span><span> Permutation Subsequence</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/2c8m54w6'><span>ABC352E</span><span>]</span><span> Clique Connect</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/2c8m54w6'><span>ABC352F</span><span>]</span><span> Estimate Order</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/ss2jfkrg'><span>ABC354D</span><span>]</span><span> AtCoder Wallpaper</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/lbbffjpu'><span>ARC178A</span><span>]</span><span> Good Permutation 2</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/o8eqxmib'><span>ABC358F</span><span>]</span><span> Easiest Maze</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/p5okynnm'><span>ABC359F</span><span>]</span><span> Tree Degree Optimization</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/qya8p8i6'><span>ABC359G</span><span>]</span><span> Sum of Tree Distance</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/h32l0xir'><span>ABC360D</span><span>]</span><span> Ghost Ants</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/2keymhql'><span>ABC361C</span><span>]</span><span> Make Them Narrow</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/wuuemxez'><span>ABC361D</span><span>]</span><span> Go Stone Puzzle</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/a1afc2ts'><span>ABC361E</span><span>]</span><span> Tree and Hamilton Path 2</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/gxbibm1u'><span>ABC363D</span><span>]</span><span> Palindromic Number</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/tj6frm2d'><span>ABC364C</span><span>]</span><span> Minimum Glutton</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/zroasxem'><span>ABC364D</span><span>]</span><span> K-th Nearest</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/p65vqsqu'><span>ABC364E</span><span>]</span><span> Maximum Glutton</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/qealoqne'><span>ABC364F</span><span>]</span><span> Range Connect MST</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/j62nj7g4'><span>ABC365G</span><span>]</span><span> AtCoder Office</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/ywzdy779'><span>ABC366G</span><span>]</span><span> XOR Neighbors</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/xq40caz8'><span>ABC367F</span><span>]</span><span> Rearrange Query</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/uqbdsvzu'><span>ABC368G</span><span>]</span><span> Add and Multiply Queries</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/1e63cm2o'><span>ABC372F</span><span>]</span><span> Teleporting Takahashi 2</span></a></p><h2 id='codeforces'><span>CodeForces</span></h2><p><span>[</span><a href='https://www.luogu.com.cn/article/ms0w3hye'><span>CF1996B</span><span>]</span><span> Scale</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/7lcuahd2'><span>CF1996C</span><span>]</span><span> Sort</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/47wbmzgk'><span>CF1996D</span><span>]</span><span> Fun</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/a71dic9v'><span>CF1996E</span><span>]</span><span> Decode</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/pznfgyd5'><span>CF1996F</span><span>]</span><span> Bomb</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/oh920zqc'><span>CF1997B</span><span>]</span><span> Make Three Regions</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/xkc737wm'><span>CF1997C</span><span>]</span><span> Even Positions</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/6u0su6yq'><span>CF1993B</span><span>]</span><span> Parity and Sum</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/m8x98g1s'><span>CF1993C</span><span>]</span><span> Light Switches</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/q1jqhprb'><span>CF1999B</span><span>]</span><span> Card Game</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/5o9vc49l'><span>CF1999C</span><span>]</span><span> Showering</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/qe7ufhwv'><span>CF1999D</span><span>]</span><span> Slavic&#39;s Exam</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/v9jjke8v'><span>CF1999E</span><span>]</span><span> Triple Operations</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/4c2n8rhs'><span>CF1999F</span><span>]</span><span> Expected Median</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/pstb3rf2'><span>CF1999G</span><span>]</span><span> Ruler</span></a></p><h2 id='luogu'><span>Luogu</span></h2><p><span>[</span><a href='https://www.luogu.com.cn/article/tqj8sowg'><span>P10723</span><span>]</span><span> (GESP202406 七级) 黑白翻转</span></a>
-<span>[</span><a href='https://www.luogu.com.cn/article/7i1y3rwe'><span>P7463</span><span>]</span><span> (CERC2018) The Lord of the Kings</span></a></p></div></div>
+<div id='write'  class=''><style> a { font-size: 1.1em; } </style><h1 id='题解--solution'><span>题解 | Solution</span></h1><hr /><h2 id='atcoder'><span>AtCoder</span></h2><p><a href='https://www.luogu.com.cn/article/p99qe98p'><span>【ABC352D】 Permutation Subsequence</span></a>
+<a href='https://www.luogu.com.cn/article/2c8m54w6'><span>【ABC352E】 Clique Connect</span></a>
+<a href='https://www.luogu.com.cn/article/2c8m54w6'><span>【ABC352F】 Estimate Order</span></a>
+<a href='https://www.luogu.com.cn/article/ss2jfkrg'><span>【ABC354D】 AtCoder Wallpaper</span></a>
+<a href='https://www.luogu.com.cn/article/lbbffjpu'><span>【ARC178A】 Good Permutation 2</span></a>
+<a href='https://www.luogu.com.cn/article/o8eqxmib'><span>【ABC358F】 Easiest Maze</span></a>
+<a href='https://www.luogu.com.cn/article/p5okynnm'><span>【ABC359F】 Tree Degree Optimization</span></a>
+<a href='https://www.luogu.com.cn/article/qya8p8i6'><span>【ABC359G】 Sum of Tree Distance</span></a>
+<a href='https://www.luogu.com.cn/article/h32l0xir'><span>【ABC360D】 Ghost Ants</span></a>
+<a href='https://www.luogu.com.cn/article/2keymhql'><span>【ABC361C】 Make Them Narrow</span></a>
+<a href='https://www.luogu.com.cn/article/wuuemxez'><span>【ABC361D】 Go Stone Puzzle</span></a>
+<a href='https://www.luogu.com.cn/article/a1afc2ts'><span>【ABC361E】 Tree and Hamilton Path 2</span></a>
+<a href='https://www.luogu.com.cn/article/gxbibm1u'><span>【ABC363D】 Palindromic Number</span></a>
+<a href='https://www.luogu.com.cn/article/gxbibm1u'><span>【ABC363G】 Dynamic Scheduling</span></a>
+<a href='https://www.luogu.com.cn/article/fecebvto'><span>【ABC364C】 Minimum Glutton</span></a>
+<a href='https://www.luogu.com.cn/article/zroasxem'><span>【ABC364D】 K-th Nearest</span></a>
+<a href='https://www.luogu.com.cn/article/p65vqsqu'><span>【ABC364E】 Maximum Glutton</span></a>
+<a href='https://www.luogu.com.cn/article/qealoqne'><span>【ABC364F】 Range Connect MST</span></a>
+<a href='https://www.luogu.com.cn/article/j62nj7g4'><span>【ABC365G】 AtCoder Office</span></a>
+<a href='https://www.luogu.com.cn/article/ywzdy779'><span>【ABC366G】 XOR Neighbors</span></a>
+<a href='https://www.luogu.com.cn/article/xq40caz8'><span>【ABC367F】 Rearrange Query</span></a>
+<a href='https://www.luogu.com.cn/article/uqbdsvzu'><span>【ABC368G】 Add and Multiply Queries</span></a>
+<a href='https://www.luogu.com.cn/article/1e63cm2o'><span>【ABC372F】 Teleporting Takahashi 2</span></a>
+<a href='https://www.luogu.com.cn/article/xeeeje5u'><span>【ABC376D】 Cycle</span></a>
+<a href='https://www.luogu.com.cn/article/ewk39izw'><span>【ABC377G】 Edit to Match</span></a>
+<a href='https://www.luogu.com.cn/article/l1y0c6l6'><span>【ABC378F】 Add One Edge 2</span></a>
+<a href='https://www.luogu.com.cn/article/ykkno25i'><span>【ABC378E】 Mod Sigma Problem</span></a>
+<a href='https://www.luogu.com.cn/article/ylog8jdg'><span>【ABC378D】 Count Simple Paths</span></a>
+<a href='https://www.luogu.com.cn/article/napeib63'><span>【ABC378C】 Repeating</span></a></p><h2 id='codeforces'><span>CodeForces</span></h2><p><a href='https://www.luogu.com.cn/article/ms0w3hye'><span>【CF1996B】 Scale</span></a>
+<a href='https://www.luogu.com.cn/article/7lcuahd2'><span>【CF1996C】 Sort</span></a>
+<a href='https://www.luogu.com.cn/article/47wbmzgk'><span>【CF1996D】 Fun</span></a>
+<a href='https://www.luogu.com.cn/article/a71dic9v'><span>【CF1996E】 Decode</span></a>
+<a href='https://www.luogu.com.cn/article/pznfgyd5'><span>【CF1996F】 Bomb</span></a>
+<a href='https://www.luogu.com.cn/article/oh920zqc'><span>【CF1997B】 Make Three Regions</span></a>
+<a href='https://www.luogu.com.cn/article/xkc737wm'><span>【CF1997C】 Even Positions</span></a>
+<a href='https://www.luogu.com.cn/article/6u0su6yq'><span>【CF1993B】 Parity and Sum</span></a>
+<a href='https://www.luogu.com.cn/article/m8x98g1s'><span>【CF1993C】 Light Switches</span></a>
+<a href='https://www.luogu.com.cn/article/q1jqhprb'><span>【CF1999B】 Card Game</span></a>
+<a href='https://www.luogu.com.cn/article/5o9vc49l'><span>【CF1999C】 Showering</span></a>
+<a href='https://www.luogu.com.cn/article/qe7ufhwv'><span>【CF1999D】 Slavic&#39;s Exam</span></a>
+<a href='https://www.luogu.com.cn/article/v9jjke8v'><span>【CF1999E】 Triple Operations</span></a>
+<a href='https://www.luogu.com.cn/article/4c2n8rhs'><span>【CF1999F】 Expected Median</span></a>
+<a href='https://www.luogu.com.cn/article/pstb3rf2'><span>【CF1999G】 Ruler</span></a></p><h2 id='luogu'><span>Luogu</span></h2><p><a href='https://www.luogu.com.cn/article/tqj8sowg'><span>【P10723】 (GESP202406 七级) 黑白翻转</span></a>
+<a href='https://www.luogu.com.cn/article/7i1y3rwe'><span>【P7463】 (CERC2018) The Lord of the Kings</span></a></p></div></div>
 </body>
 </html>
