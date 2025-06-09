@@ -19,29 +19,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"heldivis.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="使用 Android 的 Termux 软件，模拟 Linux 的尝试。">
+    <meta name="description" content="使用 Android 的 ZeroTermux 软件，模拟 Linux 的尝试。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Termux 整活日记">
+<meta property="og:title" content="ZeroTermux 整活日记">
 <meta property="og:url" content="https://heldivis.github.io/2025/06/09/Termux-%E6%95%B4%E6%B4%BB%E6%97%A5%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Heldivis Blog">
-<meta property="og:description" content="使用 Android 的 Termux 软件，模拟 Linux 的尝试。">
+<meta property="og:description" content="使用 Android 的 ZeroTermux 软件，模拟 Linux 的尝试。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-06-09T03:13:16.819Z">
-<meta property="article:modified_time" content="2025-06-09T03:17:06.585Z">
+<meta property="article:modified_time" content="2025-06-09T03:59:07.115Z">
 <meta property="article:author" content="Heldivis">
-<meta property="article:tag" content="Termux">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="Linux">
+<meta property="article:tag" content="ZeroTermux">
 <meta name="twitter:card" content="summary">
 
 
 <link rel="canonical" href="https://heldivis.github.io/2025/06/09/Termux-%E6%95%B4%E6%B4%BB%E6%97%A5%E8%AE%B0/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://heldivis.github.io/2025/06/09/Termux-%E6%95%B4%E6%B4%BB%E6%97%A5%E8%AE%B0/","path":"2025/06/09/Termux-整活日记/","title":"Termux 整活日记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://heldivis.github.io/2025/06/09/Termux-%E6%95%B4%E6%B4%BB%E6%97%A5%E8%AE%B0/","path":"2025/06/09/Termux-整活日记/","title":"ZeroTermux 整活日记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Termux 整活日记 | Heldivis Blog</title>
+<title>ZeroTermux 整活日记 | Heldivis Blog</title>
   
 
 
@@ -154,7 +154,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -167,6 +167,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-zerotermux"><span class="nav-number">1.</span> <span class="nav-text">安装 ZeroTermux</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E5%AD%97%E4%BD%93"><span class="nav-number">2.</span> <span class="nav-text">更换字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-vim"><span class="nav-number">3.</span> <span class="nav-text">安装 Vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-cc-%E7%BC%96%E8%AF%91%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">安装 C&#x2F;C++ 编译器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD-lynx"><span class="nav-number">5.</span> <span class="nav-text">下载 lynx</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -186,12 +187,14 @@
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+          <a href="/categories/">
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+          <a href="/tags/">
         <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -242,12 +245,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Termux 整活日记 | Heldivis Blog">
-      <meta itemprop="description" content="使用 Android 的 Termux 软件，模拟 Linux 的尝试。">
+      <meta itemprop="name" content="ZeroTermux 整活日记 | Heldivis Blog">
+      <meta itemprop="description" content="使用 Android 的 ZeroTermux 软件，模拟 Linux 的尝试。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Termux 整活日记
+          ZeroTermux 整活日记
         </h1>
 
         <div class="post-meta-container">
@@ -259,7 +262,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-06-09 11:13:16 / 修改时间：11:17:06" itemprop="dateCreated datePublished" datetime="2025-06-09T11:13:16+08:00">2025-06-09</time>
+      <time title="创建时间：2025-06-09 11:13:16 / 修改时间：11:59:07" itemprop="dateCreated datePublished" datetime="2025-06-09T11:13:16+08:00">2025-06-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -281,14 +284,66 @@
     </span>
 </div>
 
-            <div class="post-description">使用 Android 的 Termux 软件，模拟 Linux 的尝试。</div>
+            <div class="post-description">使用 Android 的 ZeroTermux 软件，模拟 Linux 的尝试。</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><blockquote>
+<p>Termux 是一个适用于 Android 的终端模拟器，其环境类似于 Linux
+环境。无需Root或设置即可使用。Termux 会自动进行最小安装——使用 APT
+包管理器即可获得其他软件包。<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</blockquote>
+<p><strong>由于高版本 Android
+会出现杀后台的情况，本文只用终端，不用图形页面。</strong></p>
+<h2 id="安装-zerotermux">安装 ZeroTermux</h2>
+<p><a
+target="_blank" rel="noopener" href="https://github.com/hanxinhao000/ZeroTermux/releases/download/release/ZeroTermux-0.118.1.43.apk">ZeroTermux
+下载链接（https://github.com/hanxinhao000/ZeroTermux）</a>。</p>
+<p>下载安装后出现：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Welcome to Termux!</span><br><span class="line"></span><br><span class="line">Communities: https://termux.org/community</span><br><span class="line">Gitter chat: https://gitter.im/termux/termux</span><br><span class="line">IRC channel: <span class="comment">#termux on libera.chat</span></span><br><span class="line"></span><br><span class="line">Working with packages:</span><br><span class="line"></span><br><span class="line"> * Search packages:   pkg search &lt;query&gt;</span><br><span class="line"> * Install a package: pkg install &lt;package&gt;</span><br><span class="line"> * Upgrade packages:  pkg upgrade</span><br><span class="line"></span><br><span class="line">Subscribing to additional repositories:</span><br><span class="line"></span><br><span class="line"> * Root:     pkg install root-repo</span><br><span class="line"> * X11:      pkg install x11-repo</span><br><span class="line"></span><br><span class="line">Report issues at https://termux.org/issues</span><br><span class="line"></span><br><span class="line">~ $</span><br></pre></td></tr></table></figure>
+<p>然后从左边界向右划，或者按 <code>音量+</code>
+键，有一些功能，这里可以换个源。<code>continue</code> 询问选
+Y，后边直接回车就行。</p>
+<h2 id="更换字体">更换字体</h2>
+<p>默认字体太丑啦。</p>
+<p>把想要的字体（比如 <a
+target="_blank" rel="noopener" href="https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip">FiraCode</a>）的
+TTF 文件放在手机 <code>/storage/emulated/0/ximhao/font</code> 里，在
+ZeroTermux 里 <code>音量+</code> 菜单字体设置里选一下，重启就好了。</p>
+<h2 id="安装-vim">安装 Vim</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ pkg install vim</span><br></pre></td></tr></table></figure>
+<p><code>continue</code> 询问选 Y。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ vim a.cc</span><br></pre></td></tr></table></figure>
+<p>发现就好了。</p>
+<h2 id="安装-cc-编译器">安装 C/C++ 编译器</h2>
+<p>于是愉快的写一个 Hello World：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a.cc</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;Hello, world&quot;</span> &lt;&lt; endl;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在终端里安装一个编译器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ pkg install clang</span><br></pre></td></tr></table></figure>
+<p><code>continue</code> 询问选 Y。</p>
+<p>然后</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">~ $ g++ a.cc -o a</span><br><span class="line">~ $ ./a</span><br><span class="line">Hello, world</span><br></pre></td></tr></table></figure>
+<p>就说明安好了。<del>当然如果发现报错了，还可能是你的 Hello World
+写错了，或者用 gcc 编译了半天（不是我）</del></p>
+<h2 id="下载-lynx">下载 lynx</h2>
+<p>当然也可以下载其他的，我喜欢用这个。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ pkg install lynx</span><br></pre></td></tr></table></figure>
+<p>然后：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ lynx example.com</span><br></pre></td></tr></table></figure>
+<p>就可进网页了。</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a target="_blank" rel="noopener" href="https://termux.dev/cn/">Termux | The main
+termux site and help pages</a><a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -312,16 +367,16 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Termux/" rel="tag"># Termux</a>
               <a href="/tags/Android/" rel="tag"># Android</a>
               <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/ZeroTermux/" rel="tag"># ZeroTermux</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/06/06/hello-world/" rel="prev" title="你好，世界！">
+                <a href="/1970/01/01/hello-world/" rel="prev" title="你好，世界！">
                   <i class="fa fa-angle-left"></i> 你好，世界！
                 </a>
             </div>
