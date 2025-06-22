@@ -13,7 +13,8 @@
     padding: 5px 15px;
     color: #353535;
     font-weight: bold;
-    font-size: 13px;
+    font-family: "楷体";
+    font-size: 0.85em;
     display: block;
     cursor: pointer;
 }
@@ -23,11 +24,11 @@
 }
 
 .spoiler.collapsed .spoiler-title:before {
-    content: "Show ";
+    content: "显示 ";
 }
 
 .spoiler.expanded .spoiler-title:before {
-    content: "Hide ";
+    content: "隐藏 ";
 }
 
 .spoiler .spoiler-content {
@@ -56,5 +57,5 @@
 }
 
 .spoiler .spoiler-content p:first-child {
-    margin-top: 0 !important;
+    margin-top: 1em;
 }
