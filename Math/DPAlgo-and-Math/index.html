@@ -19,29 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"heldivis.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="系统默认初始文章。">
+    <meta name="description" content="使用 DP 思想，对数学问题进行求解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好，世界！">
-<meta property="og:url" content="https://heldivis.github.io/uncategorized/hello-world/index.html">
+<meta property="og:title" content="动态规划算法与数学">
+<meta property="og:url" content="https://heldivis.github.io/Math/DPAlgo-and-Math/index.html">
 <meta property="og:site_name" content="𝕳𝖊𝖑𝖉𝖎𝖛𝖎𝖘 𝕭𝖑𝖔𝖌">
-<meta property="og:description" content="系统默认初始文章。">
+<meta property="og:description" content="使用 DP 思想，对数学问题进行求解">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://heldivis.github.io/image/hello-world/avatar.png">
-<meta property="article:published_time" content="1969-12-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-05T02:25:13.473Z">
+<meta property="article:published_time" content="2025-07-15T10:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-15T03:11:19.359Z">
 <meta property="article:author" content="Heldivis">
-<meta property="article:tag" content="heldivis, Heldivis, heldivis blog">
+<meta property="article:tag" content="动态规划">
+<meta property="article:tag" content="概率期望">
+<meta property="article:tag" content="计数">
+<meta property="article:tag" content="线性代数">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://heldivis.github.io/image/hello-world/avatar.png">
 
 
-<link rel="canonical" href="https://heldivis.github.io/uncategorized/hello-world/">
+<link rel="canonical" href="https://heldivis.github.io/Math/DPAlgo-and-Math/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://heldivis.github.io/uncategorized/hello-world/","path":"uncategorized/hello-world/","title":"你好，世界！"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://heldivis.github.io/Math/DPAlgo-and-Math/","path":"Math/DPAlgo-and-Math/","title":"动态规划算法与数学"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>你好，世界！ | 𝕳𝖊𝖑𝖉𝖎𝖛𝖎𝖘 𝕭𝖑𝖔𝖌</title>
+<title>动态规划算法与数学 | 𝕳𝖊𝖑𝖉𝖎𝖛𝖎𝖘 𝕭𝖑𝖔𝖌</title>
   
 
 
@@ -159,7 +160,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -172,7 +173,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8"><span class="nav-number">1.</span> <span class="nav-text">快速启动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E5%B8%96%E5%AD%90"><span class="nav-number">1.1.</span> <span class="nav-text">创建新帖子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">启动服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E8%87%B3%E8%BF%9C%E7%A8%8B%E7%AB%99%E7%82%B9"><span class="nav-number">1.4.</span> <span class="nav-text">部署至远程站点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">2.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">2.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">2.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">2.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">2.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">3.</span> <span class="nav-text">Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Download"><span class="nav-number">3.1.</span> <span class="nav-text">Test For Download</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Image"><span class="nav-number">3.2.</span> <span class="nav-text">Test For Image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Math"><span class="nav-number">3.3.</span> <span class="nav-text">Test For Math</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Fold"><span class="nav-number">3.4.</span> <span class="nav-text">Test For Fold</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Code"><span class="nav-number">3.5.</span> <span class="nav-text">Test For Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Bilibili"><span class="nav-number">3.6.</span> <span class="nav-text">Test For Bilibili</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-For-Text"><span class="nav-number">3.7.</span> <span class="nav-text">Test For Text</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -187,18 +187,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -237,7 +237,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://heldivis.github.io/uncategorized/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://heldivis.github.io/Math/DPAlgo-and-Math/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/image/avatar.png">
@@ -250,12 +250,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="你好，世界！ | 𝕳𝖊𝖑𝖉𝖎𝖛𝖎𝖘 𝕭𝖑𝖔𝖌">
-      <meta itemprop="description" content="系统默认初始文章。">
+      <meta itemprop="name" content="动态规划算法与数学 | 𝕳𝖊𝖑𝖉𝖎𝖛𝖎𝖘 𝕭𝖑𝖔𝖌">
+      <meta itemprop="description" content="使用 DP 思想，对数学问题进行求解">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          你好，世界！
+          动态规划算法与数学
         </h1>
 
         <div class="post-meta-container">
@@ -266,7 +266,16 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：1970-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T00:00:00+08:00">1970-01-01</time>
+      <time title="创建时间：2025-07-15 18:00:00" itemprop="dateCreated datePublished" datetime="2025-07-15T18:00:00+08:00">2025-07-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Math/" itemprop="url" rel="index"><span itemprop="name">Math</span></a>
+        </span>
     </span>
 
   
@@ -279,67 +288,14 @@
     </span>
 </div>
 
-            <div class="post-description">系统默认初始文章。</div>
+            <div class="post-description">使用 DP 思想，对数学问题进行求解</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>欢迎来到 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>！这是第一篇帖子。查阅 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">文档</a> 以获取更多信息。如果在使用 Hexo 时遇到任何问题，可以在 <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">故障排除指南</a> 中找到答案，或者在 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a> 上提问。</p>
-<h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>更多信息： <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">写作</a></p>
-<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>更多信息： <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">服务</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<p>更多信息： <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">生成</a></p>
-<h3 id="部署至远程站点"><a href="#部署至远程站点" class="headerlink" title="部署至远程站点"></a>部署至远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<p>更多信息： <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
-<hr>
-<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More Info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More Info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More Info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More Info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><h3 id="Test-For-Download"><a href="#Test-For-Download" class="headerlink" title="Test For Download"></a>Test For Download</h3><p><a href="/download/hello-world/helloworld.cpp" download>Download Code</a></p>
-<h3 id="Test-For-Image"><a href="#Test-For-Image" class="headerlink" title="Test For Image"></a>Test For Image</h3><p><img src="/image/hello-world/avatar.png" alt="Avatar"></p>
-<h3 id="Test-For-Math"><a href="#Test-For-Math" class="headerlink" title="Test For Math"></a>Test For Math</h3><p>$x_{1,2}&#x3D;12$</p>
-<p>$x_{1,2}&#x3D;\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$</p>
-<p>$$<br>x_{1,2}&#x3D;\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}<br>$$</p>
-<h3 id="Test-For-Fold"><a href="#Test-For-Fold" class="headerlink" title="Test For Fold"></a>Test For Fold</h3><div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        Code
-    </div>
-    <div class='spoiler-content'>
-        <p>这是隐藏的东西</p>
-
-    </div>
-</div>
-
-<h3 id="Test-For-Code"><a href="#Test-For-Code" class="headerlink" title="Test For Code"></a>Test For Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Test-For-Bilibili"><a href="#Test-For-Bilibili" class="headerlink" title="Test For Bilibili"></a>Test For Bilibili</h3><iframe class="bilibili" src="//player.bilibili.com/player.html?bvid=BV1GJ411x7h7&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h3 id="Test-For-Text"><a href="#Test-For-Text" class="headerlink" title="Test For Text"></a>Test For Text</h3><p>asd 阿斯顿</p>
-<p><em>asd 阿斯顿</em></p>
-<p><strong>asd 阿斯顿</strong></p>
-<p><em><strong>asd 阿斯顿</strong></em></p>
-<blockquote>
-<p>asd 阿斯顿</p>
-</blockquote>
-<p><a href="">asd 阿斯顿</a></p>
+    <div class="post-body" itemprop="articleBody"><p><a href="/download/dp-and-math/document.pdf" download>PDF 下载</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -348,15 +304,24 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># 动态规划</a>
+              <a href="/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/" rel="tag"># 概率期望</a>
+              <a href="/tags/%E8%AE%A1%E6%95%B0/" rel="tag"># 计数</a>
+              <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag"># 线性代数</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/System/hello-world/" rel="prev" title="你好，世界！">
+                  <i class="fa fa-angle-left"></i> 你好，世界！
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%95%B0%E5%AD%A6/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E5%AD%A6/" rel="next" title="动态规划算法与数学">
-                  动态规划算法与数学 <i class="fa fa-angle-right"></i>
+                <a href="/Music/MAD-Paranoia/" rel="next" title="【Bilibili】MAD | 妄想症 &#x2F; 其他">
+                  【Bilibili】MAD | 妄想症 / 其他 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -373,11 +338,11 @@
 <div class="my_post_copyright">
  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
  
- <p><span><i class="fa fa-paragraph"></i> 本文标题:</span>你好，世界！</p>
- <p><span><i class="fa fa-user"></i> 文章作者:</span>Hexo</p>
- <p><span><i class="fa fa-calendar"></i> 发布时间:</span>1970年01月01日 00:00</p>
- <p><span><i class="fa fa-share"></i> 本文链接:</span><a href="/uncategorized/hello-world/" title="你好，世界！">https://heldivis.github.io/uncategorized/hello-world/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://heldivis.github.io/uncategorized/hello-world/"  aria-label="复制成功！"></i></span>
+ <p><span><i class="fa fa-paragraph"></i> 本文标题:</span>动态规划算法与数学</p>
+ <p><span><i class="fa fa-user"></i> 文章作者:</span>Heldivis</p>
+ <p><span><i class="fa fa-calendar"></i> 发布时间:</span>2025年07月15日 18:00</p>
+ <p><span><i class="fa fa-share"></i> 本文链接:</span><a href="/Math/DPAlgo-and-Math/" title="动态规划算法与数学">https://heldivis.github.io/Math/DPAlgo-and-Math/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://heldivis.github.io/Math/DPAlgo-and-Math/"  aria-label="复制成功！"></i></span>
  </p>
 </div>
 <script> 
