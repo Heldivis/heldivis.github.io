@@ -3674,3 +3674,12 @@ header.header {
     padding: 10px 12px;
   }
 }
+
+h2 {
+  font-family: 'Times New Roman', '宋体';
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+}
